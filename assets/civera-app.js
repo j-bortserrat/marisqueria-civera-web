@@ -302,6 +302,17 @@ document.querySelectorAll('.lang-toggle button').forEach(btn=>{
   applyI18n(lang);
 })();
 
+// Evitar flash de scroll suave al llegar con hash (#reviews) desde otra página:
+// el navegador anima la llegada al ancla y muestra el hero antes de bajar.
+// Activamos smooth-scroll sólo después del load + un tick.
+window.addEventListener('load', () => {
+  if (location.hash) {
+    const t = document.querySelector(location.hash);
+    if (t) t.scrollIntoView();
+  }
+  setTimeout(() => document.documentElement.classList.add('smooth'), 80);
+});
+
 // NAV scroll + burger
 const navEl = document.getElementById('mainNav');
 if(navEl){
