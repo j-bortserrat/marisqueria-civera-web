@@ -274,13 +274,13 @@ function applyI18n(lang){
   applyCartaAllergens(dict);
   const pdfHref = lang === 'es' ? 'assets/carta-civera.pdf' : 'assets/carta-civera-' + lang + '.pdf';
   document.querySelectorAll('[data-carta-pdf]').forEach(a=>{ a.href = pdfHref; });
-  document.querySelectorAll('.lang-toggle button, .lang-float button').forEach(b=>{
+  document.querySelectorAll('.lang-toggle button').forEach(b=>{
     b.classList.toggle('active', b.dataset.lang === lang);
   });
   try{ localStorage.setItem('civera_lang', lang); }catch(e){}
 }
 
-document.querySelectorAll('.lang-toggle button, .lang-float button').forEach(btn=>{
+document.querySelectorAll('.lang-toggle button').forEach(btn=>{
   btn.addEventListener('click', ()=> applyI18n(btn.dataset.lang));
 });
 
