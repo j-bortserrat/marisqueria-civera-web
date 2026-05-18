@@ -99,10 +99,12 @@ nav.scrolled .logo img,nav.solid .logo img{height:38px}
 .nav-links a::after{content:'';position:absolute;bottom:-6px;left:0;width:0;height:1px;background:var(--gold);transition:width .3s}
 .nav-links a:hover::after,.nav-links a.active::after{width:100%}
 .nav-right{display:flex;align-items:center;gap:18px}
-.lang-toggle{display:flex;gap:0;border:1px solid rgba(201,169,97,0.5);border-radius:2px;overflow:hidden}
-.lang-toggle button{background:transparent;border:none;padding:6px 11px;font-family:'Inter',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:0.1em;color:var(--cream);cursor:pointer;transition:all .25s}
+.lang-toggle{display:flex;gap:0;border:1px solid rgba(201,169,97,0.7);border-radius:3px;overflow:hidden;flex-shrink:0}
+.lang-toggle button{background:transparent;border:none;padding:7px 12px;font-family:'Inter',sans-serif;font-size:.74rem;font-weight:700;letter-spacing:0.08em;color:var(--cream);cursor:pointer;transition:all .25s;min-width:34px;line-height:1}
+.lang-toggle button + button{border-left:1px solid rgba(201,169,97,0.35)}
 .lang-toggle button.active{background:var(--gold);color:var(--navy)}
 .lang-toggle button:not(.active):hover{background:rgba(245,237,224,0.08);color:var(--gold)}
+@media (max-width: 620px){.lang-toggle button{padding:8px 11px;font-size:.78rem;min-width:36px}}
 .nav-cta{background:var(--coral)!important;color:var(--cream)!important;padding:9px 18px;border-radius:2px;font-size:.74rem!important;font-weight:600!important;transition:background .3s}
 .nav-cta:hover{background:var(--coral-deep)!important;color:var(--cream)!important}
 .nav-cta::after{display:none!important}
