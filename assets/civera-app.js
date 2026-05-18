@@ -70,7 +70,8 @@ const I18N = {
     'howto.walk':'A pie','howto.walkText':'Desde la Plaza del Ayuntamiento, sigue por la calle Periodista Azzati y gira a la derecha en Mosén Femades. 2 minutos andando.',
     'parking.title':'Aparcamientos cercanos','parking.intro':'Los más cercanos a Mosén Femades:',
     'parking.1':'Parking Plaza del Ayuntamiento — 3 min andando','parking.2':'Parking Plaza de la Reina — 5 min andando','parking.3':'Parking Mercado Central — 6 min andando',
-    'reserve.title':'Reserva tu mesa','reserve.intro':'Reserva online en cuestión de segundos. Si lo prefieres, también puedes llamarnos o escribirnos por WhatsApp.',
+    'reserve.title':'Reserva tu mesa','reserve.heroH1':'Reserva tu <em>mesa</em>','reserve.intro':'Reserva online en cuestión de segundos. Si lo prefieres, también puedes llamarnos o escribirnos por WhatsApp.',
+    'contacto.heroH1':'Dónde <em>estamos</em>',
     'reserveExtra.eyebrow':'Eventos privados','reserveExtra.title':'Comidas de empresa, celebraciones y grupos','reserveExtra.text':'Disponemos de salas privadas para comidas de empresa, comuniones, cumpleaños y eventos especiales. Para grupos de más de 10 personas, llámanos directamente y te preparamos un menú personalizado.','reserveExtra.cta':'Llamar al restaurante',
     'cartaPage.intro':'Marisco fresco recibido cada mañana, arroces tradicionales valencianos, pescados de lonja y una bodega cuidada por nuestro sumiller. La carta cambia con la temporada y con lo que llega del mercado del día.',
     'cartaWines.title':'Carta de vinos','cartaWines.text':'Más de doscientas referencias seleccionadas por nuestro sumiller. Vinos D.O. valencianos, Rioja, Ribera del Duero, Galicia, champagne y cava. Carta completa disponible en sala.',
@@ -151,7 +152,8 @@ const I18N = {
     'howto.walk':'On foot','howto.walkText':'From Plaza del Ayuntamiento, follow Calle Periodista Azzati and turn right at Mosén Femades. 2 min walk.',
     'parking.title':'Nearby parking','parking.intro':'Closest to Mosén Femades:',
     'parking.1':'Plaza del Ayuntamiento parking — 3 min walk','parking.2':'Plaza de la Reina parking — 5 min walk','parking.3':'Mercado Central parking — 6 min walk',
-    'reserve.title':'Book your table','reserve.intro':'Book online in seconds. If you prefer, you can also call us or message us on WhatsApp.',
+    'reserve.title':'Book your table','reserve.heroH1':'Book your <em>table</em>','reserve.intro':'Book online in seconds. If you prefer, you can also call us or message us on WhatsApp.',
+    'contacto.heroH1':'Where <em>we are</em>',
     'reserveExtra.eyebrow':'Private events','reserveExtra.title':'Corporate meals, celebrations and groups','reserveExtra.text':'We have private rooms for corporate meals, communions, birthdays and special events. For groups of more than 10 people, call us directly and we\'ll prepare a custom menu.','reserveExtra.cta':'Call the restaurant',
     'cartaPage.intro':'Fresh seafood received every morning, traditional Valencian rice dishes, fish from the market and a wine cellar curated by our sommelier. The menu changes with the season and with what arrives from the market each day.',
     'cartaWines.title':'Wine list','cartaWines.text':'Over two hundred references selected by our sommelier. D.O. Valencian wines, Rioja, Ribera del Duero, Galicia, champagne and cava. Full list available at the restaurant.',
@@ -232,7 +234,8 @@ const I18N = {
     'howto.walk':'A piedi','howto.walkText':'Dalla Plaza del Ayuntamiento, segui calle Periodista Azzati e gira a destra in Mosén Femades. 2 min a piedi.',
     'parking.title':'Parcheggi vicini','parking.intro':'I più vicini a Mosén Femades:',
     'parking.1':'Parcheggio Plaza del Ayuntamiento — 3 min a piedi','parking.2':'Parcheggio Plaza de la Reina — 5 min a piedi','parking.3':'Parcheggio Mercado Central — 6 min a piedi',
-    'reserve.title':'Prenota il tuo tavolo','reserve.intro':'Prenota online in pochi secondi. Se preferisci, puoi anche chiamarci o scriverci su WhatsApp.',
+    'reserve.title':'Prenota il tuo tavolo','reserve.heroH1':'Prenota il tuo <em>tavolo</em>','reserve.intro':'Prenota online in pochi secondi. Se preferisci, puoi anche chiamarci o scriverci su WhatsApp.',
+    'contacto.heroH1':'Dove <em>siamo</em>',
     'reserveExtra.eyebrow':'Eventi privati','reserveExtra.title':'Pranzi aziendali, celebrazioni e gruppi','reserveExtra.text':'Disponiamo di sale private per pranzi aziendali, comunioni, compleanni ed eventi speciali. Per gruppi di più di 10 persone, chiamaci direttamente e ti prepariamo un menù personalizzato.','reserveExtra.cta':'Chiama il ristorante',
     'cartaPage.intro':'Frutti di mare freschi ricevuti ogni mattina, risotti tradizionali valenciani, pesci di mercato e una cantina curata dal nostro sommelier. Il menù cambia con la stagione e con quello che arriva dal mercato del giorno.',
     'cartaWines.title':'Carta dei vini','cartaWines.text':'Oltre duecento etichette selezionate dal nostro sommelier. Vini D.O. valenciani, Rioja, Ribera del Duero, Galizia, champagne e cava. Carta completa disponibile in sala.',
@@ -245,7 +248,7 @@ const I18N = {
   }
 };
 
-const HTML_I18N_KEYS = new Set(['cookies.text','carta.legend.intro','carta.note.arroces','carta.hero.h1']);
+const HTML_I18N_KEYS = new Set(['cookies.text','carta.legend.intro','carta.note.arroces','carta.hero.h1','reserve.heroH1','contacto.heroH1']);
 
 function applyCartaAllergens(dict){
   const label = dict['carta.allergens.label'] || 'Alérgenos:';
