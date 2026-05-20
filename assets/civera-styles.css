@@ -447,6 +447,11 @@ footer a:hover{color:var(--gold)}
 .footer-bottom{padding-top:28px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;color:var(--text-muted);font-size:.78rem}
 .footer-legal-links{display:flex;gap:20px;flex-wrap:wrap}
 
+.wertical-credit{display:inline-flex;align-items:baseline;gap:5px;font-size:.78rem;color:var(--text-muted)}
+.wertical-credit .by{font-size:.78rem;text-transform:lowercase;letter-spacing:0;color:var(--text-muted);font-weight:400}
+.wertical-credit a{font-family:'Fraunces','Playfair Display',Georgia,serif;font-style:italic;font-weight:500;font-size:.95rem;color:var(--text-light);opacity:.75;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:1px;transition:color .3s,opacity .3s,border-color .3s;letter-spacing:-0.005em}
+.wertical-credit a:hover{color:var(--gold);opacity:1;border-bottom-color:var(--gold)}
+
 /* COOKIE BANNER */
 .cookie-banner{position:fixed;bottom:20px;left:20px;right:20px;max-width:520px;background:var(--navy);border:1px solid var(--gold);border-radius:4px;padding:24px;z-index:200;box-shadow:var(--shadow);transform:translateY(150%);transition:transform .5s ease}
 .cookie-banner.show{transform:translateY(0)}
